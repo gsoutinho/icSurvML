@@ -1,0 +1,36 @@
+Package: icSurvML
+Type: Package
+Title: Methods for Interval-Censored Survival and Multi-State Models
+Version: 0.1.0
+Authors@R: c(
+	person(
+		given = "Gustavo",
+		family = "Soutinho",
+		role = c("aut", "cre"),
+		email = "gustavosoutinho@sapo.pt",
+		comment = c(ORCID = "0000-0002-0559-1327")
+	),
+	person(
+		given = "Luis",
+		family = "Meira-Machado",
+		role = "aut",
+		email = "lmachado@math.uminho.pt",
+		comment = c(ORCID = "0000-0002-8577-7665")
+	)
+	)
+Description: Tools for the analysis of interval-censored data,
+    including Turnbull-based survival estimation, bootstrap confidence
+    intervals, group comparisons, imputation methods based on
+    classical, parametric and machine-learning approaches, and
+    landmark estimators of transition probabilities in progressive
+    illness-death models with first gaps interval-censored.
+License: GPL-3
+Depends: R (>= 3.5.0)
+Encoding: UTF-8
+LazyLoad: yes
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports: survival, interval, survidm,
+    xgboost, randomForestSRC, mstate, mboost, survivalsvm
+Suggests: knitr, rmarkdown, testthat
